@@ -22,7 +22,7 @@ Encrypting File System (EFS) certificates will be migrated automatically. Howeve
 **Note**  
 The **/efs** options are not used with the LoadState command.
 
- 
+scanstate x:\%ComputerName% /efs:skip /i:migapp.xml /i:migdocs.xml /o
 
 Before using the ScanState tool for a migration that includes encrypted files and EFS certificates, you must ensure that all files in an encrypted folder are encrypted as well or remove the encryption attribute from folders that contain unencrypted files. If the encryption attribute has been removed from a file but not from the parent folder, the file will be encrypted during the migration using the credentials of the account used to run the LoadState tool.
 
